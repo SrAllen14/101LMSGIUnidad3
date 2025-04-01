@@ -7,5 +7,19 @@
 </head>
 <body>
     <header class="card"></header>
+    <script>
+        var cuerpo = document.getElementsByName("body");
+        var cabecera=document.querySelector(".card");
+        var nuevoTexto = document.createElement("h1");
+        nuevoTexto.textContent="Esto es un título";
+
+        var nuevoParrafo = document.createElement("p");
+        nuevoParrafo.textContent="Esto es un parrafo"
+
+        cabecera.appendChild(nuevoTexto);
+        cabecera.appendChild(nuevoParrafo);
+        cabecera.style.backgroundColor="#f0f0f0"
+        cabecera.style.padding = "10px"
+    </script>
 </body>
 </html>
